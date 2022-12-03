@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --cor-1: #000;
+    --cor-2: #0071e3;
+    --cor-3: #999;
+    --cor-4: #fff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.titulo-secao {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#cabecalho {
+    background-color: var(--cor-1);
+    margin-bottom: 30px;
+}
+
+#cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho #logo{
+    width: 30px;
+}
+
+#cabecalho nav li {
+    display: inline-block;
+}
+
+#cabecalho nav li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--cor-3);
+    font-weight: bold;
+}
+
+#cabecalho nav li a:hover {
+    background-color: var(--cor-2);
+    color: var(--cor-4);
+    font-weight: bold;
+    transition: 0.85s;
+}
+
+#modelos {
+    margin-bottom: 50px;
+}
+
+#modelos .container > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+#modelos img {
+    max-height: 300px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+#modelos h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#modelos ul {
+    padding-left: 20px;
+}
+
+#modelos ul li {
+    margin-bottom: 10px;
+}
+
+#modelos .btn-comprar {
+    background-color: var(--cor-2);
+    color: var(--cor-4);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 50px;
+    max-width: 120px;
+    margin-bottom: 10px;
+}
+
+#modelos .btn-comprar:hover {
+    background-color: #003972;
+}
+
+#modelos .saiba-mais {
+    text-decoration: none;
+    color: var(--cor-2);
+}
+
+#modelos .saiba-mais::after {
+    content: "\276F";
+    margin-left: 5px;
+}
+
+#galeria {
+    background-color: #ddd;
+    padding: 50px 0;
+}
+
+#galeria ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#galeria ul li {
+    list-style: none;
+}
+
+#galeria ul li img {
+    display: block;
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+#galeria ul li img:hover {
+    transform: scale(0.9);
+    
+}
+
+#apresentacao {
+    background-color: var(--cor-1);
+    padding: 50px 0;
+}
+
+#apresentacao .titulo-secao {
+    color: var(--cor-4);
+}
+
+#apresentacao iframe {
+    max-width: 850px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    border: solid 5px #333;
+}
+
+#rodape {
+    padding: 50px;
+    background-color: var(--cor-3);
+    text-align: center;
+    color: var(--cor-1);
+}
